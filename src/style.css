@@ -19,6 +19,9 @@
     font-style: normal;
 }
 
+:root {
+    font-family: 'Montserrat-Regular';
+}
 .background--background-color {
     height: 40rem;
     width: 100%;
@@ -36,6 +39,7 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin-bottom: 2rem;
 }
 
 .header--about {
@@ -77,4 +81,93 @@ h1 {
 .portfolio-icon {
     width: 25px;
     height: 25px;
+}
+
+.main-h1 {
+    margin-left: 15rem;
+}
+
+.main-works {
+    height: 40rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+
+.works {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.work {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 12px 17px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 12px 17px -1px rgba(0,0,0,0.75);
+box-shadow: 1px 12px 17px -1px rgba(0,0,0,0.75);
+}
+
+.work-img {
+    height: 192px;
+    width: 338px;
+    text-align: center;
+}
+
+.work--info-first-row {
+    display: flex;
+    align-items: center;
+}
+
+.work-name {
+    margin: 0.5rem;
+}
+
+.work-desc {
+    margin: 0.5rem;
+}
+
+footer {
+    display: grid;
+    margin-top: 2rem;
+    height: 40rem;
+    width: 100%;
+    background-color: #0891b2;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+
+.footer-info {
+    grid-column: 2 / 3;
+    color: white;
+}
+
+.footer-photo {
+    grid-column: 3 / 4;
+}
+
+.photo-footer {
+    width: 35rem; 
+    height: 25rem;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.work--info-first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work-links {
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
